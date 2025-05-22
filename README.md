@@ -1,168 +1,73 @@
-# Fitness and Calorie Tracker
+# Welcome to your Lovable project
 
-A full-stack application for tracking workouts, nutrition, and fitness goals.
+## Project info
 
-## Features
+**URL**: https://lovable.dev/projects/117f38fb-08d6-4668-9e2c-53bb5490f4b2
 
-- User authentication and profile management
-- Workout tracking with exercise details
-- Nutrition tracking with meal planning
-- Progress monitoring and statistics
-- Responsive and modern UI
+## How can I edit this code?
 
-## Tech Stack
+There are several ways of editing your application.
 
-### Frontend
-- React with TypeScript
+**Use Lovable**
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/117f38fb-08d6-4668-9e2c-53bb5490f4b2) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
 - Vite
+- TypeScript
+- React
+- shadcn-ui
 - Tailwind CSS
-- React Router
-- React Query
-- Shadcn UI Components
 
-### Backend
-- Node.js with Express
-- MongoDB
-- JWT Authentication
-- Express Validator
+## How can I deploy this project?
 
-## Prerequisites
+Simply open [Lovable](https://lovable.dev/projects/117f38fb-08d6-4668-9e2c-53bb5490f4b2) and click on Share -> Publish.
 
-- Node.js (v16 or higher)
-- MongoDB (local or Atlas)
-- npm or yarn
+## Can I connect a custom domain to my Lovable project?
 
-## Setup Instructions
+Yes it is!
 
-### Backend Setup
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env` file in the backend directory with the following variables:
-   ```
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/fitness-tracker
-   JWT_SECRET=your-secret-key-here
-   NODE_ENV=development
-   ```
-
-4. Start the backend server:
-   ```bash
-   npm run dev
-   ```
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd obsidian-purple-gains-tracker-main
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-## API Endpoints
-
-### Authentication
-- POST `/api/auth/register` - Register a new user
-- POST `/api/auth/login` - Login user
-
-### Workouts
-- GET `/api/workouts` - Get all workouts
-- POST `/api/workouts` - Create a new workout
-- PUT `/api/workouts/:id` - Update a workout
-- DELETE `/api/workouts/:id` - Delete a workout
-
-### Nutrition
-- GET `/api/nutrition/:date` - Get nutrition entries for a specific date
-- POST `/api/nutrition` - Create or update nutrition entry
-- GET `/api/nutrition/summary/:startDate/:endDate` - Get nutrition summary for a date range
-
-### Profile
-- GET `/api/profile` - Get user profile
-- PUT `/api/profile` - Update user profile
-- PUT `/api/profile/settings` - Update user settings
-- PUT `/api/profile/password` - Change password
-
-## Database Schema
-
-### User
-- username (String)
-- email (String)
-- password (String)
-- profile (Object)
-  - height (Number)
-  - weight (Number)
-  - age (Number)
-  - gender (String)
-  - activityLevel (String)
-  - goals (Array)
-  - targetWeight (Number)
-  - dailyCalorieGoal (Number)
-
-### Workout
-- userId (ObjectId)
-- name (String)
-- date (Date)
-- exercises (Array)
-  - name (String)
-  - sets (Array)
-    - reps (Number)
-    - weight (Number)
-    - duration (Number)
-    - notes (String)
-  - restTime (Number)
-- duration (Number)
-- notes (String)
-- tags (Array)
-- isCompleted (Boolean)
-
-### Nutrition
-- userId (ObjectId)
-- date (Date)
-- meals (Array)
-  - name (String)
-  - foods (Array)
-    - name (String)
-    - quantity (Number)
-    - unit (String)
-    - calories (Number)
-    - protein (Number)
-    - carbs (Number)
-    - fat (Number)
-    - fiber (Number)
-    - sugar (Number)
-    - sodium (Number)
-  - totalCalories (Number)
-  - totalProtein (Number)
-  - totalCarbs (Number)
-  - totalFat (Number)
-- waterIntake (Number)
-- notes (String)
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## License
-
-This project is licensed under the MIT License. 
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
