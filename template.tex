@@ -1,0 +1,106 @@
+% Template for Fitness Tracker Report
+\documentclass[12pt,a4paper,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{indentfirst}
+
+% Page layout
+\geometry{a4paper, margin=1in}
+\setlength{\parindent}{0.5in}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Title formatting
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\bfseries}{\thesubsection}{1em}{}
+
+% Line spacing
+\onehalfspacing
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge\bfseries Fitness Tracker Application\par}
+    \vspace{1.5cm}
+    {\Large A Comprehensive Fitness Tracking Solution\par}
+    \vspace{2cm}
+    {\Large\itshape [Your Name]\par}
+    \vspace{1cm}
+    {\large [Your Institution]\par}
+    \vspace{1cm}
+    {\large Under the guidance of\par}
+    {\large [Guide's Name]\par}
+    \vspace{2cm}
+    {\large \today\par}
+\end{titlepage}
+
+% Certificate page
+\newpage
+\thispagestyle{empty}
+\vspace*{2cm}
+\begin{center}
+    \textbf{CERTIFICATE}
+\end{center}
+\vspace{1cm}
+This is to certify that the project titled "Fitness Tracker Application" has been completed by [Your Name] under my guidance and supervision. This project is the result of the student's own work and has not been submitted elsewhere for any other degree or diploma.
+
+\vspace{2cm}
+\begin{flushright}
+    [Guide's Name]\\
+    [Designation]\\
+    [Institution]
+\end{flushright}
+
+% Declaration page
+\newpage
+\thispagestyle{empty}
+\vspace*{2cm}
+\begin{center}
+    \textbf{DECLARATION}
+\end{center}
+\vspace{1cm}
+I hereby declare that the project titled "Fitness Tracker Application" submitted for [Your Degree/Program] is my original work and has not been submitted elsewhere for any other degree or diploma.
+
+\vspace{2cm}
+\begin{flushright}
+    [Your Name]\\
+    [Your Roll Number]
+\end{flushright}
+
+% Acknowledgment page
+\newpage
+\thispagestyle{empty}
+\vspace*{2cm}
+\begin{center}
+    \textbf{ACKNOWLEDGMENT}
+\end{center}
+\vspace{1cm}
+I would like to express my sincere gratitude to my guide, [Guide's Name], for their invaluable guidance and support throughout this project. I also extend my thanks to [Other Acknowledgments] for their assistance and encouragement.
+
+% Table of Contents
+\newpage
+\tableofcontents
+
+% Main content
+$body$
+
+\end{document} 
